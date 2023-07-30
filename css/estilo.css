@@ -1,12 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*-- Body --*/
 
 .fondo-general {
-    background-color: #ffcad4;
+    background-color: #FFEFD5;
+    background-image: url(../imagenes/fondo-general.jpg);
+    background-size: cover;
 }
 
 /*-- Header --*/
@@ -18,74 +21,71 @@
 .logo {
     display: block;
     margin: auto;
-    width: 250px;
-    height: 130px;
+    width: 20vw;
+    height: 10vw;
 }
 
 .lista-header {
     text-align: center;
     background-color: #cdb4db;
-}
-
-li {
-
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0px 10px;
+    font-weight: 500;
 }
 
 /*-- Footer --*/
 .footer {
     background-color: #cdb4db;
     width: 100%;
+    font-weight: 500;
 }
 
 /* -- Index -- */
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 2.8vw;
     background-color: #cdb4db;
     color: #632f0b;
+    border-top: 2px #632f0b solid;
 }
 
 .contenedorInicial {
-    display: flex;
     display: grid;
-
 }
 
 .caja-de-texto {
-    font-size: 30px;
+    font-size: 1.5vw;
     font-family: Arial, Helvetica, sans-serif; /*AGREGAR FUENTES NUEVAS*/
     text-align: justify;
-    width: 75%;
+    width: 52vw;
     margin-top: 10px;
     background-color: #cdb4db;
     line-height: 30px;
     padding: 10px;
-    color: #632f0b
+    color: #632f0b;
 }
 
-.final {
-    width: 100%;
-    height: 550px;
-}
 .caja-imagen {
-    width: 65%;
+    width: 45vw;
     height: 450px;
+    text-align: center;
 }
 
 .subtitulo {
     text-align: start;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 2.2vw;
     padding: 10px;
+    color: #632f0b;
+    font-weight: bold;
+}
+
+.final {
+    width: 100%;
+    height: 38vw;
 }
 
 .imagenCarrusel {
-    height: 500px;
+    height: 35vw;
 }
 
 /* -- Contacto --*/
@@ -95,7 +95,6 @@ label,
 textarea {
     display: block;
     margin-top: 15px;
-
 }
 
 .boton-enviar {
@@ -115,23 +114,25 @@ textarea {
     font-weight: bold;
     display: block;
     margin-top: 30px;
-    ;
 }
 
 .formulario-contacto {
     width: 150px;
-
 }
 
-/* -- PRODUCTOS -- */
+/* -- PRODUCTOS / SHOWROOMS -- */
 
-.botonComprar {
+.botonComprar, .botonMapa {
     background-color: #b14f09;
     color: white;
     font-weight: bold;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
+.botonComprar:hover, .botonMapa:hover {
+    background-color: #c86b29;
+}
 
 .precio {
     font-weight: bold;
@@ -148,4 +149,8 @@ div {
     display: flex;
     flex-wrap: wrap;
     font-weight: bold;
+}
+
+.mapas {
+    max-width: 100%;
 }
