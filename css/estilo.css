@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /*-- Body --*/
+
+body {
+    font-family: 'Dancing Script', cursive;
+}
 
 .fondo-general {
     background-color: #FFEFD5;
@@ -54,7 +59,6 @@ h1 {
 
 .caja-de-texto {
     font-size: 1.5vw;
-    font-family: Arial, Helvetica, sans-serif; /*AGREGAR FUENTES NUEVAS*/
     text-align: justify;
     width: 52vw;
     margin-top: 10px;
@@ -72,7 +76,6 @@ h1 {
 
 .subtitulo {
     text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.2vw;
     padding: 10px;
     color: #632f0b;
@@ -105,12 +108,10 @@ textarea {
 
 .caja-enlace-contacto {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
 .caja-formulario {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: block;
     margin-top: 30px;
@@ -122,7 +123,7 @@ textarea {
 
 /* -- PRODUCTOS / SHOWROOMS -- */
 
-.botonComprar, .botonMapa {
+.botonGeneral {
     background-color: #b14f09;
     color: white;
     font-weight: bold;
@@ -130,7 +131,7 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
-.botonComprar:hover, .botonMapa:hover {
+.botonGeneral:hover {
     background-color: #c86b29;
 }
 
@@ -148,9 +149,18 @@ div {
 .descripcion {
     display: flex;
     flex-wrap: wrap;
-    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .mapas {
     max-width: 100%;
+}
+
+/*--ASESORIAS--*/
+
+.casillas {
+    width: 50vw;
+    height: 5vw;
+    background-color: #dec5ee;
+    text-align: center;
 }
