@@ -10,6 +10,30 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: #cdb4db;
+    color: #632f0b; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* BOTONES */
+.botonGeneral {
+    background-color: #b14f09;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botonGeneral:hover {
+    background-color: #c86b29;
+}
+
 /*-- Header --*/
 
 .fondo-logo {
@@ -54,15 +78,6 @@ li:hover {
 
 /* -- Index -- */
 
-h1 {
-    text-align: center;
-    font-size: 50px;
-    background-color: #cdb4db;
-    color: #632f0b; 
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
 .secciones {
     margin: 40px;
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
@@ -92,7 +107,6 @@ h1 {
     font-weight: bold;
 }
 
-
 /* -- Contacto --*/
 
 .contenedorFormulario {
@@ -100,7 +114,7 @@ h1 {
     border-radius: 3px;
     border: gray solid 2px;
     margin: auto;
-   background-color: #fff4f2;
+    background-color: #fff4f2;
 }
 
 .leyendaForm {
@@ -121,7 +135,7 @@ h1 {
 }
 
 .campoMensaje {
-    width: 800px;
+    width: 75%;
     background-color: #f0c0b8;
     border: none;
 }
@@ -162,9 +176,9 @@ label {
 }
 
 .tarjeta {
-   margin-top: 15px;
-   margin-bottom: 10px;
-   border-bottom: 2px #FF6347 solid;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px #FF6347 solid;
 }
 
 .mapas {
@@ -194,20 +208,7 @@ label {
     border-radius: 5px;
 }
 
-/* BOTONES */
-.botonGeneral {
-    background-color: #b14f09;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 10px;
-    transition: background-color 0.3s ease;
-}
 
-.botonGeneral:hover {
-    background-color: #c86b29;
-}
 /*--ASESORIAS--*/
 
 .gridGuia {
@@ -280,6 +281,8 @@ label {
 
 /* -- MEDIAS QUERIES -- */
 
+/*QUERIES PRODUCTOS*/
+
 @media (max-width: 400px) {
 
     h1 {
@@ -289,11 +292,6 @@ label {
     .contenedorProductos {
         grid-template-columns: 100%;        
     }
-
-    .tarjeta {
-        margin-left: 0px;
-    }
-    
 }
 
 @media (min-width: 401px) and (max-width: 1000px) {
@@ -301,12 +299,9 @@ label {
     .contenedorProductos {
         grid-template-columns: repeat(2, 50%);        
     }
-
-    .tarjeta {
-        margin-left: 0px;
-    }
 }
 
+/*QUERIES ASESORIAS*/
 @media (min-width: 300px) {
 
     .headerGuia {
@@ -318,3 +313,4 @@ label {
         max-width: auto;
     }
 }
+
