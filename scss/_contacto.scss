@@ -1,0 +1,51 @@
+.contenedorFormulario {
+	text-align: center;
+	border-radius: $radioBordes - 2px;
+	border: gray solid 2px;
+	margin: auto;
+	background-color: #fff4f2;
+	.leyendaForm {
+		font-size: 30px;
+		font-weight: bold;
+		color: $colorLetras;
+		margin-bottom: 15px;
+	}
+	.camposForm {
+		display: inline;
+		margin-right: 20px;
+		background-color: #f0c0b8;
+		border-radius: $radioBordes;
+		border: none;
+		width: 300px;
+		height: 40px;
+	}
+	.campoMensaje {
+		width: 75%;
+		background-color: #f0c0b8;
+		border: none;
+	}
+	label {
+		color: $colorLetras;
+		font-weight: bold;
+	}
+    .contenedorCampos {
+        margin-bottom: 30px;
+    }
+}
+.contenedorRedes {
+	display: flex;
+	justify-content: center;
+	.logoRedes {
+		width: 100px;
+		height: 100px;
+		background-color: #f0c0b8;
+		border-radius: $radioBordes x 10px;
+		margin: 30px 50px;
+	}
+}
+.texto {
+	font-size: $medidaLetras;
+	color: $colorLetras;
+	font-weight: bold;
+	text-align: center;
+}

@@ -1,0 +1,18 @@
+.secciones {
+	margin: 40px;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+	.caja-de-texto {
+		@include parrafosGenerales;
+	}
+	.caja-imagen {
+		height: 320px;
+		text-align: center;
+	}
+	.subtitulo {
+		text-align: start;
+		font-size: 40px;
+		padding: 10px;
+		color: $colorLetras;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,25 @@
+.imagenCompras {
+	width: 100%;
+	height: 500px;
+}
+
+.tarjeta {
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	border-bottom: 2px #FF6347 solid;
+	.mapas {
+		width: 500px;
+		height: 450px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.ubicacion {
+		@extend .subtitulo;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.ubicacionTexto {
+		@include parrafosGenerales;
+	}
+}

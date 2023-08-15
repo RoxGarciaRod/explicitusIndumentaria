@@ -1,0 +1,27 @@
+.fondo-logo {
+	background-color: black;
+	.logo {
+		display: block;
+		margin: auto;
+		width: 20%;
+		height: 10%;
+	}
+}
+.lista-header {
+	display: block;
+	text-align: center;
+	background-color: $colorCajas;
+	font-size: $medidaLetras;
+	li {
+		margin: 0px 20px;
+		transition: background-color 0.3s ease;
+	}
+	li {
+		&:hover {
+			background-color: rgb(243, 159, 243);
+			border-radius: $radioBordes;
+			border-bottom: solid 2px black;
+			font-weight: 500;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.headerGuia {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 30px auto;
+}
+.gridGuia {
+	display: grid;
+	grid-template-columns: 1.5fr repeat(4, 0.8fr);
+	text-align: start;
+	margin: 20px auto;
+	max-width: 800px;
+	border: solid black 2px;
+	border-radius: $radioBordes;
+	background-color: #dec5ee;
+	.talle {
+		div {
+			text-align: center;
+			padding: 8px 10px;
+			font-size: $medidaLetras;
+			font-weight: bold;
+			border: black solid 1px;
+		}
+	}
+}
+.formularioAsesor {
+	margin-bottom: 25px;
+	margin-top: 25px;
+}

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*-- Body --*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(to top, #cdb4db, #cdb4db, white);
+    color: #632f0b; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* BOTONES */
+
+.botonGeneral {
+	background-color: #b14f09;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 10px;
+	transition: background-color 0.3s ease;
+	.botonGeneral {
+		&:hover {
+			background-color: #c86b29;
+		}
+	}
+}
+@mixin parrafosGenerales {
+	font-size: $medidaLetras;
+		text-align: justify;
+		margin-top: 10px;
+		background-color: $colorCajas;
+		line-height: 30px;
+		padding: 10px;
+		color: $colorLetras;
+		border-radius: $radioBordes;
+}
+
+@import "variables";
+@import "header";
+@import "index";
+@import "footer";
+@import "contacto";
+@import "showrooms";
+@import "asesorias";
+@import "productos";
+@import "queries";
+

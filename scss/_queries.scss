@@ -1,0 +1,34 @@
+/*QUERIES PRODUCTOS*/
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .contenedorProductos {
+        grid-template-columns: 100%;
+        gap: 5px;       
+    }
+}
+
+@media (min-width: 401px) and (max-width: 1000px) {
+
+    .contenedorProductos {
+        grid-template-columns: repeat(2, 50%);        
+    }
+}
+
+/*QUERIES ASESORIAS*/
+@media (min-width: 300px) {
+
+    .headerGuia {
+        font-size: 25px;
+    }
+
+    .gridGuia {
+        grid-template-columns: 1fr repeat(4, 0.5fr);
+        max-width: auto;
+    }
+}
+
