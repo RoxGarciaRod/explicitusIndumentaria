@@ -55,7 +55,7 @@ h1 {
 .lista-header li:hover {
   background-color: rgb(243, 159, 243);
   border-radius: 5px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1px black;
   font-weight: 500;
 }
 
