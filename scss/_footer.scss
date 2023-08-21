@@ -5,4 +5,23 @@
 	width: 100%;
 	font-weight: 500px;
 	list-style-type: none;
+	li {
+		margin: 0px 20px;
+		transition: background-color 0.3s ease;
+	}
+	li {
+		&:hover {
+			background-color: rgb(243, 159, 243);
+			border-radius: $radioBordes;
+			border-bottom: solid 1px black;
+			font-weight: 500;
+		}
+	}
+	.footerCompany {
+		padding-left: 5rem;
+	}
+}
+
+.container-fluid {
+	padding: 0;
 }

@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 3.13rem;
   background: linear-gradient(to top, #cdb4db, #cdb4db, white);
   color: #632f0b;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ h1 {
   padding: 8px 10px;
   transition: background-color 0.3s ease;
 }
-.botonGeneral .botonGeneral:hover {
+.botonGeneral:hover {
   background-color: #c86b29;
 }
 
@@ -38,8 +38,8 @@ h1 {
 .fondo-logo .logo {
   display: block;
   margin: auto;
-  width: 20%;
-  height: 10%;
+  width: 30%;
+  height: 20%;
 }
 
 .lista-header {
@@ -79,7 +79,7 @@ h1 {
 }
 .secciones .subtitulo, .secciones .tarjeta .ubicacion, .tarjeta .secciones .ubicacion {
   text-align: start;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 10px;
   color: #632f0b;
   font-weight: bold;
@@ -93,6 +93,31 @@ h1 {
   font-weight: 500px;
   list-style-type: none;
 }
+.footer li {
+  margin: 0px 20px;
+  transition: background-color 0.3s ease;
+}
+.footer li:hover {
+  background-color: rgb(243, 159, 243);
+  border-radius: 5px;
+  border-bottom: solid 1px black;
+  font-weight: 500;
+}
+.footer .footerCompany {
+  padding-left: 5rem;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.subtitulo, .tarjeta .ubicacion {
+  text-align: start;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #632f0b;
+  font-weight: bold;
+}
 
 .contenedorFormulario {
   text-align: center;
@@ -102,19 +127,19 @@ h1 {
   background-color: #fff4f2;
 }
 .contenedorFormulario .leyendaForm {
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #632f0b;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 .contenedorFormulario .camposForm {
   display: inline;
-  margin-right: 20px;
+  margin-right: 1.2rem;
   background-color: #f0c0b8;
   border-radius: 5px;
   border: none;
-  width: 300px;
-  height: 40px;
+  width: 18.8rem;
+  height: 2.5rem;
 }
 .contenedorFormulario .campoMensaje {
   width: 75%;
@@ -136,16 +161,15 @@ h1 {
 .contenedorRedes .logoRedes {
   width: 100px;
   height: 100px;
-  background-color: #f0c0b8;
-  border-radius: 5px x 10px;
   margin: 30px 50px;
 }
 
 .texto {
   font-size: 20px;
   color: #632f0b;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .imagenCompras {
@@ -155,9 +179,10 @@ h1 {
 
 .tarjeta {
   display: flex;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-bottom: 2px #FF6347 solid;
+  gap: 1.5rem;
 }
 .tarjeta .mapas {
   width: 500px;
@@ -168,6 +193,7 @@ h1 {
 .tarjeta .ubicacion {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 800;
 }
 .tarjeta .ubicacionTexto {
   font-size: 20px;
@@ -240,11 +266,14 @@ h1 {
   margin-bottom: 8px;
 }
 
-/*QUERIES PRODUCTOS*/
-@media (max-width: 400px) {
+/*HEADER*/
+@media (max-width: 700px) {
   h1 {
-    font-size: 40px;
+    font-size: 1.5rem;
   }
+}
+/*PRODUCTOS*/
+@media (max-width: 400px) {
   .contenedorProductos {
     grid-template-columns: 100%;
     gap: 5px;
@@ -263,6 +292,12 @@ h1 {
   .gridGuia {
     grid-template-columns: 1fr repeat(4, 0.5fr);
     max-width: auto;
+  }
+}
+/*SHOWROOMS*/
+@media (max-width: 900px) {
+  .tarjeta {
+    flex-direction: column;
   }
 }
 
