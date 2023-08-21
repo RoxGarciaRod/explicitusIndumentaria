@@ -300,7 +300,7 @@ h1 {
     flex-direction: column;
   }
   .mapas {
-    max-width: 50%;
+    width: 50%;
     gap: 0;
   }
 }
