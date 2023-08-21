@@ -7,6 +7,8 @@
   <title>Explicitus - Indumentaria Femenina</title>
   <meta name="description" content="Somos tienda de indumentaria Femenina con mas de 5 años de trayectoria y grandes experiencias. Te brindamos el mejor servicio y calidad en todas nuestras prendas.">
   <link rel="shortcut icon" href="imagenes/logoFavicon.png" type="image/x-icon"/>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <!-- CSS -->
@@ -69,16 +71,16 @@
       <h1>Bienvenidos a nuestra tienda virtual</h1>
 
       <section class="container">
-        <div class="row secciones">
+        <div class="row secciones" data-aos="flip-up" data-aos-duration="2000">
           <div class="col-md-6">
             <h2 class="subtitulo">Navega rápido y sencillo</h2>
             <p class="caja-de-texto">Podrás ver todo lo que tenemos disponible para ti, e incluso lo que esta por venir. Asi podras escoger las piezas que mas te gusten sin complicaciones. No te olvides de visitar nuestra seccion de "Asesorias" para alguna eleccion en especial.</p>
           </div>
-          <img class="caja-imagen col-md-6" src="imagenes/ropa-mujeres.jpg" alt="Mujer sonriendo con ropa en sus manos." />
+          <img class="caja-imagen col-md-6" src="imagenes/mujer-feliz-con-ropa.jpg" alt="Mujer sonriendo con ropa en sus manos." />
         </div>
 
-        <div class="row mt-5 secciones">
-          <img class="caja-imagen col-md-6" src="imagenes/tecnico-de-call-center.jpg" alt="Mujer en un call center"/>
+        <div class="row mt-5 secciones" data-aos="flip-down" data-aos-duration="2000">
+          <img class="caja-imagen col-md-6" src="imagenes/grupo-de-call-center.jpg" alt="grupo de cuatro personas atendiendo llamadas en oficina"/>
           <div class="col-md-6">
             <h2 class="subtitulo">¡Visita nuestra sección de contacto!</h2>
             <p class="caja-de-texto"> Para dudas, consultas, pagos, reembolsos o cualquier otro incoveniente que hayas tenido, puedes comunicarte con nuestro equipo de asesores comerciales, quienes te orientaran para solucionar lo sucedido. Estamos a disposición.</p>
@@ -87,20 +89,20 @@
         
       </section>
 
-      <section class="container">
+      <section class="container" data-aos="flip-up" data-aos-duration="2000">
         <div class="row secciones">
           <div class="col-md-6">
             <h2 class="subtitulo">Disfruta de todas nuestras temporadas</h2>
             <p class="caja-de-texto"> En "Explicitus", nos enfocamos en estar siempre a la par de las necesidades de nuestros clientes. Queremos cumplir todas las expectativas y mucho más con la construcción de tu outfit diario o para ocasiones especiales.</p>
           </div>
-          <img class="caja-imagen col-md-6" src="imagenes/mujer-liquidacion.jpg" alt="Chica con tickets de liquidacion" />
+          <img class="caja-imagen col-md-6" src="imagenes/ropa-liquidacion.jpg" alt="ropa sobre una mesa indicando liquidacion" />
         </div>
 
-        <div class="row secciones mt-5">
-          <img class="caja-imagen col-md-6" src="imagenes/chicas-con-bolsas-de-ropa.jpg" alt="Chicas con indumentaria fashion para promociones 2023"/>
+        <div class="row secciones mt-5" data-aos="flip-down" data-aos-duration="2000">
+          <img class="caja-imagen col-md-6" src="imagenes/grupo-de-chicas-shopping.jpg" alt="grupo de mujeres con bolsas de shopping"/>
           <div class="col-md-6">
             <h2 class="subtitulo">Visitas nuestros Showrooms</h2>
-            <p class="caja-de-texto">El mundo de la moda es un emocionante y siempre cambiante escenario.  Por eso te brindamos la oprtunidad de venir a visitarnos en el showroom más cercano a ti! <br> Hemos creado un espacio divertido y capaz de sumergirte en tu propia escencia y sofisticación. Ven y explora nuestras últimas novedades de esta temporada, podrás combinar cada prenda a tu gusto para una ocasión especial o para revolucionar tu estilo. <br> ¡Te esperamos! </p>
+            <p class="caja-de-texto">El mundo de la moda es un emocionante y siempre cambiante escenario.  Por eso te brindamos la oprtunidad de venir a visitarnos en el showroom más cercano a ti! <br> Hemos creado un espacio divertido y capaz de sumergirte en tu propia escencia y sofisticación. Ven y explora nuestras últimas novedades de esta temporada.<br> ¡Te esperamos! </p>
           </div>
         </div>
       </section>
@@ -108,9 +110,9 @@
 
   <div class="container-fluid">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 footer">
-      <p>&copy; - 2023 Explicitus - </p>
+      <p class="footerCompany">&copy; - 2023 Explicitus - </p>
 
-      <ul class="nav col-md-4">
+      <ul class="nav col-md-5">
         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
         <li class="nav-item"><a href="paginas/productos.html" class="nav-link px-2 text-body-secondary">Productos</a></li>
         <li class="nav-item"><a href="paginas/showrooms.html" class="nav-link px-2 text-body-secondary">Showrooms</a></li>
@@ -120,6 +122,10 @@
     </footer>
   </div>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 

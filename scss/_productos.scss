@@ -1,6 +1,6 @@
 .contenedorProductos {
 	display: grid;
-	grid-template-columns: repeat(4, 2fr);
+	grid-template-columns: repeat(3, 2fr);
 	gap: 15px;
 	.contenedorItem {
 		display: flex;

@@ -6,6 +6,8 @@
     <title>Showrooms / Explicitus - Indumentaria Femenina</title>
     <meta name="description" content="Tenemos tienda fisica y showrooms disponibles para que pongas a volar tu imaginacion.">
     <link rel="shortcut icon" href="../imagenes/logoFavicon.png" type="image/x-icon"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <!-- CSS -->
@@ -37,11 +39,11 @@
 
     <main>
       
-      <img class="imagenCompras" src="../imagenes/bolsas-de-compras.jpg" alt="Bolsas de compras">
+      <img class="imagenHeader" src="../imagenes/tienda-ropa-maniquies.jpg" alt="Fotografia a maniquies de una vidriera.">
       <h1>Visita nuestros showrooms</h1>
 
         <section class="container">
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up-right" data-aos-duration="1000">
               <iframe class="mapas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52613.77010491533!2d-58.556436311057!3d-34.493740536065026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb05662e4a08d%3A0x9811553c3a21048c!2sMart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690746477997!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <div>
                <h2 class="ubicacion">martinez</h2>
@@ -51,7 +53,7 @@
         </section>
 
           <section class="container">
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up-left" data-aos-duration="1500">
                 <div>
                   <h2 class="ubicacion">belgrano</h2>
                   <p class="ubicacionTexto">Esta tienda tiene mucho transito debido a la cercania con el "Barrio Chino". <br> Sin embargo te invitamos a ver nuestro pequeño espacio adaptado para cumplir todas las expectativas</p>
@@ -61,7 +63,7 @@
           </section>
 
           <section class="container">
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up-right" data-aos-duration="2000">
               <iframe class="mapas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.046964321336!2d-58.46532985991782!3d-34.616654518733405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses!2sar!4v1691798121048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <div class="">
                 <h2 class="ubicacion">caballito</h2>
@@ -71,7 +73,7 @@
           </section>
           
           <section class="container">
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up-left" data-aos-duration="2500">
               <div>
                 <h2 class="ubicacion">florida, vte. lopez</h2>
                 <p class="ubicacionTexto">Si estas en zona norte, te dejamos esta opcion para que no te pierdas ninguna de nuestras prendas. Por el momento solo estamos en esta tienda los dias viernes y sabados.</p>
@@ -95,6 +97,10 @@
         </footer>
       </div>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

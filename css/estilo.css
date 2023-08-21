@@ -38,8 +38,8 @@ h1 {
 .fondo-logo .logo {
   display: block;
   margin: auto;
-  width: 30%;
-  height: 20%;
+  width: 25%;
+  height: 15%;
 }
 
 .lista-header {
@@ -76,6 +76,7 @@ h1 {
 .secciones .caja-imagen {
   height: 320px;
   text-align: center;
+  object-fit: cover;
 }
 .secciones .subtitulo, .secciones .tarjeta .ubicacion, .tarjeta .secciones .ubicacion {
   text-align: start;
@@ -172,7 +173,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.imagenCompras {
+.imagenHeader {
+  object-fit: cover;
   width: 100%;
   height: 500px;
 }
@@ -238,7 +240,7 @@ h1 {
 
 .contenedorProductos {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 15px;
 }
 .contenedorProductos .contenedorItem {
