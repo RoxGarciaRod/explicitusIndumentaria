@@ -185,7 +185,7 @@ h1 {
   gap: 1.5rem;
 }
 .tarjeta .mapas {
-  width: 500px;
+  width: 70%;
   height: 450px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -298,6 +298,10 @@ h1 {
 @media (max-width: 900px) {
   .tarjeta {
     flex-direction: column;
+  }
+  .mapas {
+    max-width: 50%;
+    gap: 0;
   }
 }
 
